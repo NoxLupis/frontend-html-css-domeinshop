@@ -10,40 +10,201 @@ Table of Contents:
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
 
-
+/*Used colors:*/
+/*Gray:       #899CA0;*/
+/*Dark green: #1C2B32;*/
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+body {
+    font-family: Poppins, sans-serif;
+}
 
+h1 {
+    font-size: 90px;
+    font-weight: 600;
+    color: #1C2B32;
+}
 
+h2 {
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1+p {
+    font-size: 14px;
+    color: #1C2B32;
+}
+
+p, span {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+cite {
+    font-size: 14px;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
+main {
+    max-width: 1000px;
+    margin: auto;
+}
 
 
 /*///////////// 3.1 Header /////////////*/
+header {
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 400px;
+    align-items: center;
+    justify-items: center;
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+header div {
+    max-width: 1000px;
+}
+
+.availability {
+    display: flex;
+    max-width: 100%;
+    border: 2px solid #1C2B32;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin: 40px;
+}
+
+.availability input {
+    color: #1C2B32;
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: transparent;
+}
+
+.availability input:focus {
+    outline: none;
+}
+
+.availability input::placeholder {
+    color: #1C2B32;
+}
+
+.availability button {
+    background-color: #1C2B32;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.availability button:hover {
+    background-color: #1C2B32;
+    opacity: 0.8;
+}
 
 
 /*///////////// 3.2 Testimonial /////////////*/
+.quote {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px auto;
+    padding: 50px;
+    gap: 15px;
+    display: flex;
+}
 
+.icon {
+    height: 30px;
+    flex-shrink: 0;
+}
 
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.avatar {
+    width: 44px;
+    border-radius: 50%;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.support img {
+    max-width: 100%;
+    border-radius:20px;
+}
+
+a.button {
+    display:inline-block;
+    color: #fff;
+    padding: 1rem;
+    margin: 20px auto;
+    border-radius: 50px;
+    border-style: none;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.button:hover {
+    background-color: #899CA0;
+    cursor: pointer;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+summary {
+    /*font-weight: 600;*/
+    cursor: pointer;
+    margin: 20px auto;
+}
 
+details p {
+    background-color: #899CA0;
+    padding:1rem;
+    border-radius:15px;
+    color: #fff;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+.copyright {
+    background-color: #1C2B32;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    padding:20px;
+}

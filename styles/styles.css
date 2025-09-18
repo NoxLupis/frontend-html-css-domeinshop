@@ -26,18 +26,17 @@ Table of Contents:
 }
 
 
-
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 body {
     font-family: Poppins, sans-serif;
+    color: #1C2B32;
 }
 
 h1 {
     font-size: 90px;
     font-weight: 600;
-    color: #1C2B32;
 }
 
 h2 {
@@ -47,7 +46,6 @@ h2 {
 
 h1+p {
     font-size: 14px;
-    color: #1C2B32;
 }
 
 p, span {
@@ -104,7 +102,6 @@ header div {
 
 .availability input {
     display: flex;
-    color: #1C2B32;
     flex: 5;
     padding: 1rem 1.5rem;
     border: none;
@@ -211,8 +208,8 @@ details p {
 /*///////////// 3.5 Footer /////////////*/
 
 .copyright {
-    background-color: #1C2B32;
     color: #fff;
+    background-color: #1C2B32;
     margin-top: 30px;
     margin-bottom: 0;
     text-align: center;
